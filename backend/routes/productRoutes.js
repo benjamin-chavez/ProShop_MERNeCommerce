@@ -11,7 +11,6 @@ router.get(
   '/',
   asyncHandler(async (request, response) => {
     const products = await Product.find({});
-
     response.json(products);
   })
 );
