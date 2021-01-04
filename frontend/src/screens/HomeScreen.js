@@ -17,13 +17,6 @@ const HomeScreen = () => {
   const { loading, error, products } = productList;
 
   useEffect(() => {
-    // const fetchProducts = async () => {
-    //   // const res = await axios.get('/api/products');
-    //   const { data } = await axios.get('/api/products');
-    //   // res.data
-    //   setProducts(data);
-    // };
-    // fetchProducts();
     dispatch(listProducts());
   }, [dispatch]);
 
